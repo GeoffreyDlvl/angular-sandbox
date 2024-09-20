@@ -1,5 +1,6 @@
-<p>component-a works!</p>
-
+Component A store data: {{ myStore.data() }}
 @defer(when myStore.myObservable$ | async) {
-<app-component-b />
+<div>
+  <app-component-b />
+</div>
 }

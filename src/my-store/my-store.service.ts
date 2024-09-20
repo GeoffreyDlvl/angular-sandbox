@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
+import { delay, of } from 'rxjs';
 
 @Injectable()
 export class MyStoreService {
-  
-  myObservable$ = of("hello");
+  myObservable$ = of('hello').pipe(delay(500));
+
+  data = Math.random();
 
   constructor() {}
 }

@@ -1,1 +1,6 @@
-<app-component-a />
+@if(display) {
+<div>
+  <app-component-a />
+</div>
+}
+<button (click)="onClick()">Destroy / Recreate components</button>

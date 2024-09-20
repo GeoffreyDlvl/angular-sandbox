@@ -8,4 +8,10 @@ import { ComponentAComponent } from 'src/components/component-a/component-a.comp
 })
 export class AppComponent {
   title = 'CodeSandbox';
+
+  display = true;
+
+  onClick() {
+    this.display = !this.display;
+  }
 }
